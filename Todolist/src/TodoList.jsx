@@ -31,13 +31,13 @@ const TodoList = () => {
         <div className='col-md-4 mx-auto py-5'>
             <div className='card '>
                 <div className='card-body'>
-                    <h1 className='text-center'>Todo List</h1>
+                    <div className='bg-warning'><h1 className='text-center fw-bold'>Todo List</h1><hr /></div>
                     <br />
                     <div className='d-flex mb-3' >
-                    <input type="text" className='form-control' placeholder='Enter item' 
+                    <input type="text" className='form-control' placeholder='Enter a item....' 
                     value={TodoList}
                     onChange={itemEvents}  />
-                    <button className='btn btn-success' onClick={listofItem}>Add</button>
+                    <button className='btn btn-success mx-2' onClick={listofItem}>Add</button>
                     </div>
 
                     <ol>
